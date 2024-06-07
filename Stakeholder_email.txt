@@ -1,0 +1,28 @@
+Dear Team,
+
+I am Eshwari and I wanted to share my recent analysis of the Fetch Rewards data, focusing on the receipts, users, and brands datasets. After working with the data, I've compiled some observations, highlighted potential issues, and made efforts to normalize the data where possible.
+
+Background:
+I began by extracting the data from the zipped JSON files and then proceeded to clean and structure it into a more user-friendly format using Python. As part of this process, I normalized the data as much as possible to ensure consistency and accuracy.
+
+Key Findings and Comments:
+
+User Data Duplication:
+While examining the User table, I noticed instances where the same user ID, last login time, and created time had multiple records. I'm keen to understand the rationale behind this duplication.
+
+Mismatched Brand Codes:
+There were numerous receipts containing brand codes that did not match any brands in the brands dataset. This discrepancy could potentially impact our analysis when aggregating data by brands.
+
+Non-Numerical Brand Codes:
+Brand codes are currently stored as alphanumeric values. In my efforts to normalize the data, I recommend using numerical foreign keys to avoid potential issues during data integration.
+
+Embedded Dictionaries in Data:
+A considerable portion of the data is stored within embedded dictionaries, which required additional data wrangling steps. I've attempted to normalize the data as much as possible, but I'm curious to know if this complexity is essential for the product implementation.
+
+Discussion and Next Steps:
+I have attempted to normalize the data to improve consistency and accuracy. I would appreciate the opportunity to discuss these observations further and explore potential solutions. Please let me know a convenient time for a detailed discussion.
+
+I am Looking forward to our conversation.
+
+Best regards,
+Eshwari
